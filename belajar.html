@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Halaman belajar HTML dan CSS sederhana.">
+    <title>Belajar HTML</title>
+    <link rel="stylesheet" href="apri.css">
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navigasi utama">
+            <a class="logo" href="index.html">apri</a>
+            <div class="nav-links">
+                <a href="#tentang">Tentang</a>
+                <a href="#materi">Materi</a>
+                <a href="#menu-materi">Pilih materi</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" aria-labelledby="judul-halaman">
+            <p class="eyebrow">Belajar dari dasar</p>
+            <h1 id="judul-halaman">Mari belajar HTML dan CSS</h1>
+            <p class="intro">
+                Buat halaman web yang rapi, mudah dibaca, dan nyaman digunakan.
+            </p>
+            <a class="button" href="#materi">Mulai belajar</a>
+        </section>
+
+        <section class="content-section" id="tentang" aria-labelledby="judul-tentang">
+            <h2 id="judul-tentang">Tentang halaman ini</h2>
+            <p>
+                Halaman ini menjadi tempat latihan untuk memahami struktur HTML
+                dan tampilan halaman menggunakan CSS.
+            </p>
+        </section>
+
+        <section class="content-section" id="materi" aria-labelledby="judul-materi">
+            <h2 id="judul-materi">Materi dasar</h2>
+            <p>Pilih materi yang ingin kamu pelajari.</p>
+            <div class="materi-menu" id="menu-materi" aria-label="Menu materi">
+                <details class="materi-item">
+                    <summary>
+                        <span class="menu-number">01</span>
+                        <span>
+                            <strong>HTML</strong>
+                            <small>Struktur halaman web</small>
+                        </span>
+                        <span class="menu-arrow" aria-hidden="true">&darr;</span>
+                    </summary>
+                    <div class="materi-content">
+                        <h3>Pemahaman HTML</h3>
+                        <p>HTML adalah bahasa markup yang digunakan untuk menyusun isi halaman web, seperti judul, paragraf, gambar, tautan, dan tombol.</p>
+                        <ul>
+                            <li><code>&lt;h1&gt;</code> sampai <code>&lt;h6&gt;</code> untuk judul</li>
+                            <li><code>&lt;p&gt;</code> untuk paragraf</li>
+                            <li><code>&lt;a&gt;</code> untuk tautan</li>
+                        </ul>
+                        <h4>Contoh struktur HTML</h4>
+                        <pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="id"&gt;
+  &lt;head&gt;
+    &lt;title&gt;Belajar HTML&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Halo Dunia&lt;/h1&gt;
+    &lt;p&gt;Ini adalah paragraf pertama saya.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+                    </div>
+                </details>
+
+                <details class="materi-item">
+                    <summary>
+                        <span class="menu-number">02</span>
+                        <span>
+                            <strong>CSS</strong>
+                            <small>Tampilan dan tata letak</small>
+                        </span>
+                        <span class="menu-arrow" aria-hidden="true">&darr;</span>
+                    </summary>
+                    <div class="materi-content">
+                        <h3>Pemahaman CSS</h3>
+                        <p>CSS digunakan untuk mengatur tampilan HTML, seperti warna, ukuran teks, jarak, garis, dan tata letak halaman.</p>
+                        <ul>
+                            <li><code>color</code> untuk warna teks</li>
+                            <li><code>margin</code> dan <code>padding</code> untuk jarak</li>
+                            <li><code>display</code>, <code>grid</code>, dan <code>flex</code> untuk tata letak</li>
+                        </ul>
+                        <h4>Contoh CSS sederhana</h4>
+                        <pre><code>body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+h1 {
+  color: #d56b43;
+  text-align: center;
+}</code></pre>
+                    </div>
+                </details>
+
+                <details class="materi-item">
+                    <summary>
+                        <span class="menu-number">03</span>
+                        <span>
+                            <strong>Latihan</strong>
+                            <small>Praktik membuat halaman</small>
+                        </span>
+                        <span class="menu-arrow" aria-hidden="true">&darr;</span>
+                    </summary>
+                    <div class="materi-content">
+                        <h3>Latihan pertama</h3>
+                        <p>Buat halaman profil sederhana yang berisi nama, deskripsi singkat, dan satu tombol.</p>
+                        <ol>
+                            <li>Buat struktur HTML dengan judul dan paragraf.</li>
+                            <li>Tambahkan class pada tombol dan kartu profil.</li>
+                            <li>Gunakan CSS untuk mengatur warna, jarak, dan ukuran teks.</li>
+                        </ol>
+                    </div>
+                </details>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 apri. Dibuat untuk belajar.</p>
+    </footer>
+</body>
+</html>
